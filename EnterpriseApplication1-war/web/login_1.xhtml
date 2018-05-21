@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+        <title>Diyetisyen Girişi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <h:body>
+        <center>
+        <h3>Diyetisyen Giriş</h3>
+        <h:form>
+		
+		<h:outputText value="Username" />
+                <h:inputText id="username" value="#{diyetisyenAuth.userDiyetisyenID}"></h:inputText>
+		<h:message for="username"></h:message>
+		<br></br><br></br>
+		
+		<h:outputText value="Password" />
+                <h:inputSecret id="password" value="#{diyetisyenAuth.userDiyetisyenPWD}"></h:inputSecret>
+		<h:message for="password"></h:message>
+		<br></br><br></br>
+		
+		<h:commandButton action="#{diyetisyenAuth.checkFromDB}"
+			value="Login"></h:commandButton>
+	</h:form>
+        </center>
+    </h:body>
+</html>

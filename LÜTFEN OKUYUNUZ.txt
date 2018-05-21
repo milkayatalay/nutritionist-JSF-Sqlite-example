@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+
+
+Klasör içerisindeki "mainDB" dosyasının yolunu "DBHelper" classı içerisinde tanımlamadığınız sürece çalışmayacaktır. 
+
+
+SQLite veri yapısı aracını kullandığımızdan ötürü mainDB bizim database dosyamızdır.
+
+
+Proje klasörü içerisinde "lib" klasörü adı altında sqlite çalışabilmesi için ".jar" uzantılı sqlite kütüphane dosyasını import etmek gerekmektedir. 
